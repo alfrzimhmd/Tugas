@@ -34,10 +34,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// Coffee Image
             Stack(
               children: [
-                /// Background Image
                 Container(
                   width: double.infinity,
                   height: size.height * 0.45,
@@ -59,7 +57,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                 ),
                 
-                /// Header with Back Button and Favorite Button
                 Positioned(
                   top: size.height * 0.05,
                   left: size.width * 0.05,
@@ -128,7 +125,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               ],
             ),
 
-            /// Product Info Card
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
@@ -150,7 +146,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    /// Name and Rating
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -217,7 +212,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
 
                     const SizedBox(height: 24),
 
-                    /// Description
                     Text(
                       "Description",
                       style: TextStyle(
@@ -238,7 +232,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
 
                     const SizedBox(height: 24),
 
-                    /// Size Selection
                     Text(
                       "Size",
                       style: TextStyle(
@@ -260,7 +253,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
 
                     const SizedBox(height: 24),
 
-                    /// Quantity
                     Text(
                       "Quantity",
                       style: TextStyle(
@@ -305,7 +297,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
 
                     const SizedBox(height: 32),
 
-                    /// Price and Buy Button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [

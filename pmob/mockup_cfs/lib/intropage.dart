@@ -20,7 +20,6 @@ class CoffeeIntroPage extends StatelessWidget {
         child: Column(
           children: [
 
-            /// Image
             Expanded(
               flex: 6,
               child: Image.asset(
@@ -30,7 +29,6 @@ class CoffeeIntroPage extends StatelessWidget {
               ),
             ),
 
-            /// Text Area
             Expanded(
               flex: 4,
               child: Padding(
@@ -42,7 +40,6 @@ class CoffeeIntroPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
-                    /// Title
                     Text(
                       "Time for a coffee break....",
                       style: TextStyle(
@@ -54,7 +51,6 @@ class CoffeeIntroPage extends StatelessWidget {
 
                     const SizedBox(height: 10),
 
-                    /// Description
                     Text(
                       "Your daily dose of fresh brew delivered to your doorstep. Start your coffee journey now!",
                       style: TextStyle(
@@ -65,7 +61,6 @@ class CoffeeIntroPage extends StatelessWidget {
 
                     const SizedBox(height: 80),
 
-                    /// Indicator
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -78,7 +73,6 @@ class CoffeeIntroPage extends StatelessWidget {
 
                     SizedBox(height: size.height * 0.03),
 
-                    /// Button
                     SizedBox(
                       width: double.infinity,
                       height: size.height * 0.06,
@@ -118,7 +112,6 @@ class CoffeeIntroPage extends StatelessWidget {
     );
   }
 
-  /// Dot Indicator
   static Widget _indicator(bool active) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),

@@ -78,7 +78,6 @@ class _HomePageState extends State<HomePage> {
 
                 SizedBox(height: size.height * 0.02),
 
-                /// Search Bar
                 Row(
                   children: [
                     Expanded(
@@ -124,7 +123,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-          /// Body
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
@@ -136,7 +134,6 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     SizedBox(height: size.height * 0.02),
 
-                    /// Category
                     SizedBox(
                       height: size.height * 0.05,
                       child: ListView(
@@ -152,7 +149,6 @@ class _HomePageState extends State<HomePage> {
 
                     SizedBox(height: size.height * 0.02),
 
-                    /// Grid
                     GridView.count(
                       crossAxisCount: 2,
                       crossAxisSpacing: 15,
@@ -231,7 +227,6 @@ class _HomePageState extends State<HomePage> {
           setState(() {
             _selectedIndex = index;
           });
-          // Handle navigation 
           switch (index) {
             case 0:
               break;
@@ -346,7 +341,6 @@ class CoffeeCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// Image
             ClipRRect(
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(20),
@@ -359,7 +353,6 @@ class CoffeeCard extends StatelessWidget {
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
-                  /// Rating
                   Positioned(
                     top: 8,
                     left: 8,
@@ -388,7 +381,6 @@ class CoffeeCard extends StatelessWidget {
               ),
             ),
 
-            /// Content
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(10),
