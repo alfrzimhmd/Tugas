@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Model User
 class UserModel {
   int? id;
   String nama;
@@ -28,7 +27,6 @@ class UserModel {
   });
 }
 
-/// Halaman List User Data
 class ListUserDataPage extends StatefulWidget {
   const ListUserDataPage({super.key});
 
@@ -38,7 +36,6 @@ class ListUserDataPage extends StatefulWidget {
 
 class _ListUserDataPageState extends State<ListUserDataPage> {
 
-  /// List Data 
   List<UserModel> userList = [
     UserModel(id: 1, nama: "satu", umur: 10),
     UserModel(id: 2, nama: "dua", umur: 11),
@@ -46,11 +43,9 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
     UserModel(id: 4, nama: "empat", umur: 13),
   ];
 
-  /// Text Controller
   final TextEditingController nameController = TextEditingController();
   final TextEditingController umurController = TextEditingController();
 
-  /// Form Add/Edit
   void form({int? id}) {
     if (id != null) {
       final user = userList.firstWhere((element) => element.id == id);
@@ -106,7 +101,6 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
     );
   }
 
-  /// Handle Save 
   void handleSave({
     int? id,
     required String nama,
@@ -136,7 +130,6 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
     Navigator.pop(context);
   }
 
-  /// Delete
   void delete(int id) {
     showDialog(
       context: context,
@@ -164,7 +157,6 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
     );
   }
 
-  /// Build UI
   @override
   Widget build(BuildContext context) {
     return Scaffold(
