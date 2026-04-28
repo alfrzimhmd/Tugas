@@ -124,13 +124,6 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
     _reloadData();
   }
 
-  @override
-  void dispose() {
-    nameController.dispose();
-    umurController.dispose();
-    super.dispose();
-  }
-
   Future<void> _reloadData() async {
     final data = await DatabaseHelper.getData();
     if (mounted) {
