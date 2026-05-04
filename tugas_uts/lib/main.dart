@@ -201,7 +201,7 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
       await DatabaseHelper.insertData(UserModel(nama: nama, umur: umur));
     }
 
-    if (mounted) {
+    if (mounted && context.mounted) {
       Navigator.pop(context);
       await _reloadData();
     }
@@ -224,7 +224,7 @@ class _ListUserDataPageState extends State<ListUserDataPage> {
             TextButton(
               onPressed: () async {
                 await DatabaseHelper.deleteData(id);
-                if (mounted) {
+                if (mounted && dialogContext.mounted) {
                   Navigator.pop(dialogContext);
                   await _reloadData();
                 }
